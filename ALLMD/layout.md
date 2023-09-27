@@ -1,7 +1,7 @@
 ### Layout system in Nextjs Router
 
 #### src>app>layout.js (by-default):::
-
+```js
     import "./globals.css";
     export const metadata = {
     title: " Next App Router ",
@@ -24,6 +24,7 @@
         </html>
     );
     }
+```
 
 #### src>app>page.js (cut the route to src>(with-layout)>page.js)
 
@@ -32,6 +33,8 @@ Home age for RootLayout with Navar and Footer
 ## Create main layout
 
 ##### src>app>(with-layout)>layout.js [for main layout]::::
+
+```js
 
         import Navbar from "@/components/shared/Navbar";
 
@@ -50,9 +53,11 @@ Home age for RootLayout with Navar and Footer
         }
 
 you have create the children folder those will under the RootLayout with Navbar and Footer
+```
 
 ##### src>app>(with-layout)>page.js
 
+```js
         "use client"
 
         const HomePage = () => {
@@ -68,11 +73,15 @@ you have create the children folder those will under the RootLayout with Navbar 
 
         export default HomePage;
 
+```
+
 ### src>app>(with-layout)>blog>page.js
 
 ### src>app>(with-layout)>news>page.js
 
 ###### ** src>app>(with-layout)>news>[id]>page.js (for news details):::  
+
+```js
     "use client"
 
     const NewsDetails = ({ params,searchParams}) => {
@@ -87,6 +96,7 @@ you have create the children folder those will under the RootLayout with Navbar 
     export default NewsDetails;
 
 
+```
 ### src>app>(with-layout)>product>page.js
 
 ### src>app>(with-layout)>cart>page.js

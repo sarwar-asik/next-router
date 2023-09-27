@@ -9,7 +9,11 @@
 
    src>app>blog>[id]>page.js  ::
 
-        "use client"
+
+
+```js
+
+  "use client"
 
             const BlogDetails = ({ params,searchParams}) => {
                 console.log(params,"and",searchParams);
@@ -22,4 +26,5 @@
 
         export default BlogDetails
 
+```
                     
